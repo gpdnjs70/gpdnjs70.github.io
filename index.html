@@ -1,11 +1,128 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <title>gpdnjs70 GitHub Page</title>
-  </head>
-  <body>
-    <h1>안녕하세요, gpdnjs70입니다 👋</h1>
-    <p>여기는 제가 만든 GitHub Pages 테스트 페이지입니다.</p>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>p5.js 과제 모음 - gpdnjs70</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      background: #f5f5f5;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 30px 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    p.desc {
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .grid-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .work {
+      background: #fafafa;
+      border-radius: 10px;
+      padding: 14px 14px 18px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .work h2 {
+      font-size: 16px;
+      margin: 0 0 8px;
+    }
+
+    .work small {
+      display: block;
+      color: #777;
+      margin-bottom: 8px;
+      font-size: 11px;
+    }
+
+    .work img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+    }
+
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+    }
+
+    @media (max-width: 700px) {
+      .grid-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>p5.js 과제 모음</h1>
+    <p class="desc">
+      GitHub Pages로 제출하는 p5.js 과제 결과물 페이지입니다.<br />
+      위쪽에는 과제 1, 4 / 아래쪽에는 과제 2, 3 순으로 배치했습니다.
+    </p>
+
+    <!-- 1행: 과제 1, 과제 4 -->
+    <div class="grid-row">
+      <div class="work">
+        <h2>과제 1</h2>
+        <small>p5.js Assignment 1</small>
+        <!-- src 경로를 실제 파일 이름/위치에 맞게 수정 -->
+        <img src="images/1.png" alt="p5.js 과제 1 결과물" />
+      </div>
+
+      <div class="work">
+        <h2>과제 4</h2>
+        <small>p5.js Assignment 4</small>
+        <img src="images/4.gif" alt="p5.js 과제 4 결과물" />
+      </div>
+    </div>
+
+    <!-- 2행: 과제 2, 과제 3 -->
+    <div class="grid-row">
+      <div class="work">
+        <h2>과제 2</h2>
+        <small>p5.js Assignment 2</small>
+        <img src="images/2.png" alt="p5.js 과제 2 결과물" />
+      </div>
+
+      <div class="work">
+        <h2>과제 3</h2>
+        <small>p5.js Assignment 3</small>
+        <img src="images/3.gif" alt="p5.js 과제 3 결과물" />
+      </div>
+    </div>
+
+    <footer>
+      © 2025 gpdnjs70 · p5.js Assignments
+    </footer>
+  </div>
+</body>
 </html>
