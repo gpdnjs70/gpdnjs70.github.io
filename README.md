@@ -1,1 +1,0 @@
-# gpdnjs70.github.io
